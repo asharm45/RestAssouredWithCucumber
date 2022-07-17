@@ -1,0 +1,13 @@
+package utilities.request;
+
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+public class Location {
+    private Double lat;
+    private Double lng;
+}
